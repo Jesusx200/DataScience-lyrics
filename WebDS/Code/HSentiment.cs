@@ -149,11 +149,10 @@ namespace WebDS.Code
                     indx = (indx == 1) ? 2 : indx;
                 }
                 tmp[indx] += 1;
+
+                Words w = new Words((year).ToString(), tmp);
+                words.Add(w);
             }
-
-            Words w = new Words((year).ToString(), tmp);
-            words.Add(w);
-
             return words;
         }
     }
